@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 const apiUrl = 'https://swapi.dev/api/people';
 export default function CharacterPage() {
     const { id } = useParams();
-    const [characterData, setCharacterData] = useState([]);
+    const [characterData, setCharacterData] = useState({});
 
     useEffect(() => {
         async function fetchSingleCharacter() {
@@ -16,6 +16,9 @@ export default function CharacterPage() {
         }
         fetchSingleCharacter()
     })
+
+    const [filmUrl, setFilmUrl] = useState({});
+
 
 
     return <>
@@ -28,15 +31,9 @@ export default function CharacterPage() {
                 <div className="charContainer"> <p>Hair color: {characterData.hair_color}</p> </div>
             </div>
             <div className="charCaracteristics">
-                <p> {characterData.films.length} films</p>
+                <p> {characterData.films && characterData.films.length} films</p>
                 <div>
-                    {characterData.films.map((filmUrl) => {
-                            return (
-                                <div>
-                                    <p></p>
-                                </div>
-                            )
-                    })}
+                  
                 </div>
             </div>
             <div>
