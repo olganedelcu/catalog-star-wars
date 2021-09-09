@@ -1,0 +1,65 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+
+.title {
+    padding: 5px;
+    margin: 5px;
+}
+.title-link {
+    text-decoration: none;
+    color: #2e2d2b;
+  }
+.card {
+    width: 30%;
+    border: grey solid 1px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.card:hover {
+    background-color: #d1ccc0;
+    cursor: pointer;
+}
+.characterPage {
+
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+    height: auto;
+}
+.charCaracteristics {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    padding: 5px;
+
+}
+.charContainer {
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.goBackHome{
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    color: black;
+    border: 2px solid black;
+    background-color: rgb(224, 162, 140);
+}
