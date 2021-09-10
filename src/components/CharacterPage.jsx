@@ -32,11 +32,18 @@ export default function CharacterPage() {
             </div>
             <div className="charCaracteristics">
                 <p> {characterData.films && characterData.films.length} films</p>
-                <div>
-                  
+            </div>
+            <div className="charCaracteristics">
+                <div className="films">
+                    <p>Films</p>
+                    <ul>
+                        <li>
+                            List
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div>
+            <div className="charCaracteristics">
                 <Link to="/" className="goBackHome">Go Back Home...</Link>
             </div>
         </div>
