@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
-
-
 const apiUrl = 'https://swapi.dev/api/people';
 export default function CharacterPage() {
     const { id } = useParams();
@@ -16,11 +14,6 @@ export default function CharacterPage() {
         }
         fetchSingleCharacter()
     })
-
-    const [filmUrl, setFilmUrl] = useState({});
-
-
-
     return <>
         <div className="characterPage">
             <h2> {characterData.name}</h2>
@@ -33,19 +26,14 @@ export default function CharacterPage() {
             <div className="charCaracteristics">
                 <p> {characterData.films && characterData.films.length} films</p>
             </div>
-            <div className="charCaracteristics">
                 <div className="films">
-                    <p>Films</p>
-                    <ul>
-                        <li>
-                            List
-                        </li>
-                    </ul>
+                    <div>
+                        {characterData.films && characterData.films.map(film => <p>{film}</p>)}
+                    </div>
                 </div>
             </div>
             <div className="charCaracteristics">
                 <Link to="/" className="goBackHome">Go Back Home...</Link>
             </div>
-        </div>
     </>
 }

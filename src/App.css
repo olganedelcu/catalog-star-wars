@@ -64,8 +64,11 @@
 .button.class{
     margin: 5px;
     padding: 5px;
+    margin-left: 50%;
+    margin-right: 50%;
     align-items: center;
-
+    display: flex;
+    justify-content: center;
 
 }
 .goBackHome{
@@ -78,7 +81,8 @@
 }
 
 .films{
-    border:  2 solid black;
+    border:  2px solid black;
     border-radius: 2px;
     display: block;
 }
+

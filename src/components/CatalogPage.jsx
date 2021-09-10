@@ -19,7 +19,7 @@ export default function CatalogPage({ data }) {
                                 <div>
                                     <p> Heigth: {people.height} </p>
                                     <p>Birth year: {people.birth_year}</p>
-                                    <p>{people.films.length} films</p>
+                                    <p>{people.films && people.films.length} films</p>
                                 </div>
                                 </Link>
                             </div>

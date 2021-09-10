@@ -1,23 +1,45 @@
-import React from 'react'
-import styled from 'styled-components'
-
-const Button = styled.button`
-display: inline-block;
-border-radius: 3px;
-padding: 0.5rem 0;
-margin: 0.5rem 1rem;
-width: 11rem;
-background-color: #f5cd79;
-color: white;
-border: 2px solid #f5cd79;`
+import React, { useState, useEffect } from 'react'
 
 export default function LoadMore() {
+    const [listCharacters, setListCharacters] = useState([]);
+    const [nextUrl, setNextUrl] = useState("");
+    const [prevUrl, setPrevUrl] = useState("");
+
+    useEffect(function () {
+        fetch("https://swapi.dev/api/people/?format=json")
+            .then(function (response) {
+                return response.json()
+            }).then((data) => {
+                setListCharacters(data.results)
+                setNextUrl(data.next) // url to page 2
+                setPrevUrl(data.previous) // url to page 2
+
+            })
+    }, [])
+
+    // will change the state of app
+    function loadMore() {
+        // fetch the next url
+        fetch(nextUrl)
+            .then(function (response) {
+                return response.json()
+            }).then(function (data) {
+                // update the state
+                setListCharacters([
+                    ...listCharacters, // old state
+                    ...data.results
+                ])
+                // set the next to the next page
+                setNextUrl(data.next)
+                setPrevUrl(data.previous)
+            })
+    }
     return (
         <div className="button.class">
-            <Button onClick={() => {
-
-            }}>LOAD MORE...</Button>
+            <button  onClick={loadMore} >Load More...</button>
         </div>
 
     )
 }
+
+
