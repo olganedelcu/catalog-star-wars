@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 export default function LoadMore() {
-    const [listCharacters, setListCharacters] = useState([]);
+    const [listCharacters, setListCharacters] = useState({});
     const [nextUrl, setNextUrl] = useState("");
     const [prevUrl, setPrevUrl] = useState("");
 
