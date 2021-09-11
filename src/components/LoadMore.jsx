@@ -36,7 +36,7 @@
     }
     return (
         <div className="button.class">
-            <button  onClick={loadMore} >Load More...</button>
+            <button  onClick={loadMore}  data-cy={load-more}>Load More...</button>
         </div>
 
     )
