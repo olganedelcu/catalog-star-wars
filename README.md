@@ -17,8 +17,13 @@ Build a web application to show a catalog of the Start Wars characters
 -  (Optional) Create a component that returns a button to fetch more Character Cards to the HomePage that'll is put together in App.jsx
 
 ## Screenshots
+Catalog Page && Home Page
+
 ![Character Page](screens/demo.png)
 ## 
+
+Character Card Page 
+
 ![Character Card Page](screens/character.png)
 ## Libraries / Tools Used
 
