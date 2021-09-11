@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
+/* import React, { useState, useEffect } from 'react'
 
-export default function LoadMore() {
-    const [listCharacters, setListCharacters] = useState({});
+ export default function LoadMore() {
+      const [listCharacters, setListCharacters] = useState({});
     const [nextUrl, setNextUrl] = useState("");
-    const [prevUrl, setPrevUrl] = useState("");
-
+      const [prevUrl, setPrevUrl] = useState("");
+    
     useEffect(function () {
         fetch("https://swapi.dev/api/people/?format=json")
             .then(function (response) {
@@ -41,5 +41,6 @@ export default function LoadMore() {
 
     )
 }
+*/
 
 

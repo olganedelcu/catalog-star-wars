@@ -28,7 +28,7 @@ export default function CharacterPage() {
             </div>
                 <div className="films">
                     <div>
-                        {characterData.films && characterData.films.map(film => <p>{film}</p>)}
+                        {characterData.films && characterData.films.map(film => <p>- {film}</p>)}
                     </div>
                 </div>
             </div>

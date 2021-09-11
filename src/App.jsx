@@ -23,7 +23,6 @@ function App() {
         <Switch>
           <Route exact path='/'>
             <CatalogPage data={people} />
-            <LoadMore />
           </Route>
           <Route exact path='/character/:id'>
             <CharacterPage/>
