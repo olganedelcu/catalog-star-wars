@@ -18,7 +18,7 @@ Build a web application to show a catalog of the Start Wars characters
 
 ## Screenshots
 ![Character Page](screens/demo.png)
-![Character Card Page](screens/charater_card.png)
+![Character Card Page](screens/charater.png)
 ## Libraries / Tools Used
 
 - React.js
