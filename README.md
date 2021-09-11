@@ -18,6 +18,7 @@ Build a web application to show a catalog of the Start Wars characters
 
 ## Screenshots
 ![Character Page](screens/demo.png)
+## 
 ![Character Card Page](screens/character.png)
 ## Libraries / Tools Used
 
