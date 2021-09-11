@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "cypress": "^7.5.0"
+    "cypress": "^7.5.0",
+    "msw": "^0.35.0"
   }
 }
