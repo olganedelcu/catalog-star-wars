@@ -6,7 +6,7 @@ Build a web application to show a catalog of the Start Wars characters
 
 ## Netlify deploy 
 
-[🔗  Link](catalog-star-wars.netlify.app/ )
+[🔗  Link](https://catalog-star-wars.netlify.app/)
 ## API link used
 
 [🤓  Star Wars API](https://swapi.dev/api/people/?format=json)
