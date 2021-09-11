@@ -4,7 +4,6 @@ import CatalogPage from './components/CatalogPage';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Container } from 'semantic-ui-react'
 import CharacterPage from './components/CharacterPage';
-import LoadMore from './components/LoadMore';
 
 function App() {
   const [people, setPeople] = useState([]);
