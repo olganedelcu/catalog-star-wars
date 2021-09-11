@@ -9,7 +9,7 @@ Build a web application to show a catalog of the Start Wars characters
 [🔗 Link](catalog-star-wars.netlify.app/ )
 ## API link used
 
-[ℹ️ Star Wars API](https://swapi.dev/api/people/?format=json)
+[🤓Star Wars API](https://swapi.dev/api/people/?format=json)
 ## Assumptions
 
 - Catalog Home Page
