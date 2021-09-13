@@ -15,7 +15,7 @@ function App() {
       setPeople(data.results);
     }
     fetchPeople();
-  })
+  },[])
   return (
     <Router>
       <Container>

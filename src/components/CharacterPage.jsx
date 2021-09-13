@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import   Film  from "./Film";
+
 const apiUrl = 'https://swapi.dev/api/people';
+
+
+
 export default function CharacterPage() {
     const { id } = useParams();
     const [characterData, setCharacterData] = useState({});
@@ -13,7 +18,8 @@ export default function CharacterPage() {
             setCharacterData(data);
         }
         fetchSingleCharacter()
-    })
+    }, [])
+
     return <>
         <div className="characterPage">
             <h2> {characterData.name}</h2>
@@ -28,7 +34,7 @@ export default function CharacterPage() {
             </div>
                 <div className="films">
                     <div>
-                        {characterData.films && characterData.films.map(film => <p>- {film}</p>)}
+                        {characterData.films && characterData.films.map(film => <Film url = {film}/>)}
                     </div>
                 </div>
             </div>
